@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+body
+{
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url('weather.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container
+{
+    width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(5px) ;
+    border-radius: 15px;
+    box-shadow: 0 0 16px grey;
+    animation: slideTop 1s ease forwards;
+    
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(67, 66, 66);
+}
+.inputs 
+{
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: rgb(42, 163, 211, 0.7);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    opacity : 0;
+    animation: slideTop 1s ease forwards;
+    box-shadow: 0 0 16px grey;
+}
+.inputs input[type="text"] 
+{
+    height: 3rem;
+    width: 20rem;
+    background: #212121;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-right:4px ;
+    box-shadow: 0 0 16px grey;
+}
+.inputs input[type="submit"] 
+{
+    height: 3rem;
+    width: 6rem;
+    background: #270aca;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 16px grey;
+}
+.display 
+{
+    text-align: center;
+    width: 520px;
+    color: #16a864;
+}
+.wrapper 
+{
+    margin: 0 9rem;
+    background-color: rgb(172, 189, 221);
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 10px;
+    opacity : 0;
+    animation: slideTop 1s ease forwards;
+    box-shadow: 0 0 16px grey;
+
+}
+
+.wrapper h2
+{
+    padding: 5px 0;
+    text-align: center;
+    background: #0549b5d6;
+    color: white;
+    
+}
+.wrapper p
+{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size:23px;
+}
+.wrapper h2 span
+{
+    font-size: 26px;
+    color: #9beefb;
+    opacity : 0;
+    animation: slideRight 1s ease forwards;
+}
+.wrapper p span
+{
+    color: #5e0df4;
+    font-size: 25px;
+    opacity : 0;
+    animation: slideRight 1s ease forwards;
+} 
+@keyframes slideTop{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
